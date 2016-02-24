@@ -57,6 +57,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-screenshot (1.0.12)
+      capybara (>= 1.0, < 3)
+      launchy
     capybara-webkit (1.8.0)
       capybara (>= 2.3.0, < 2.7.0)
       json
@@ -97,6 +100,8 @@ GEM
     factory_girl_rails (4.6.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    faker (1.6.1)
+      i18n (~> 0.5)
     flutie (2.0.0)
     formulaic (0.3.0)
       activesupport
@@ -104,6 +109,8 @@ GEM
       i18n
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     hashdiff (0.3.0)
     high_voltage (2.4.0)
     highline (1.7.8)
@@ -269,6 +276,7 @@ DEPENDENCIES
   bourbon (~> 4.2.0)
   bundler-audit
   byebug
+  capybara-screenshot
   capybara-webkit (>= 1.2.0)
   coffee-rails (~> 4.1.0)
   database_cleaner
@@ -276,8 +284,10 @@ DEPENDENCIES
   dotenv-rails
   email_validator
   factory_girl_rails
+  faker
   flutie
   formulaic
+  haml
   high_voltage
   i18n-tasks
   jquery-rails
@@ -308,4 +318,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.10.4
+   1.11.2

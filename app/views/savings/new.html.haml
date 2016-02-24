@@ -1,0 +1,6 @@
+%h1 Welcome to DonateME
+
+#savings-list
+  = render "savings/list", locals: { savings: @savings }
+%div
+  %a#new-random-savings-btn{:href => ""} Random
