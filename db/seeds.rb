@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require "factory_girl"
+include FactoryGirl::Syntax::Methods
+
+create(:saving, name: "coffee", price: 2.99)
+create(:saving, name: "tacos", price: 1.99)
+create(:saving, name: "smoking", price: 5.99)
+create(:saving, name: "1000 tv channels", price: 120.99)

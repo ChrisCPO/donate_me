@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.2.2"
+ruby "2.2.4"
 
 # gem "airbrake"
 gem "autoprefixer-rails"
@@ -8,16 +8,18 @@ gem "bourbon", "~> 4.2.0"
 gem "coffee-rails", "~> 4.1.0"
 gem "delayed_job_active_record"
 gem "email_validator"
+gem "faker"
 gem "flutie"
 gem "high_voltage"
+gem "haml"
 gem "i18n-tasks"
 gem "jquery-rails"
 gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
-gem "rack-canonical-host"
 gem "puma"
+gem "rack-canonical-host"
 gem "rails", "~> 4.2.0"
 gem "recipient_interceptor"
 gem "refills"
@@ -44,6 +46,7 @@ end
 
 group :test do
   gem "capybara-webkit", ">= 1.2.0"
+  gem 'capybara-screenshot'
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
